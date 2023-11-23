@@ -1,0 +1,37 @@
+
+  
+  /* Style for the news card */
+  ion-card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Style for the news card title */
+  ion-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Style for the news card image */
+  ion-img.image {
+    max-width: 200px;
+    padding-left: 16px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  
+  /* Style for the "Read more" button */
+  ion-button {
+
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Hover effect for the "Read more" button */
+  ion-button:hover {
+    color: #000000;
+  }

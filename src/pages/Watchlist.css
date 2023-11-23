@@ -1,0 +1,12 @@
+
+
+@media screen and (max-width: 768px) {
+    .removeBtn {
+        max-width: 100%;
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+}
+
+ion-row {
+    border-bottom: 1px solid #e0e0e0;
+}
