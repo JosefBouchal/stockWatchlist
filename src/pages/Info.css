@@ -1,0 +1,20 @@
+.pageExplain {
+    padding: 10px 0px 10px 0px;
+    font-size: large;
+}
+
+.accordionHeaderText {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pageLabel{
+    font-size: 26px !important;
+    font-weight: bold;
+}

@@ -1,0 +1,48 @@
+/* Earnings.css */
+.earning-grid ion-card {
+    width: 80px; /* Adjust width as needed */
+    margin: 5px;   /* Adjust margin as needed */
+  }
+  
+  .earning-grid ion-card ion-card-content {
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .date-section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .date-header {
+    background-color: #101010;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px !important;
+    margin: 0;
+  }
+  
+  .earning-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .earning-grid ion-card {
+      width: calc(50% - 10px); /* Adjust for smaller screens */
+    }
+  }
+  
+  .no-earnings {
+    text-align: center;
+    padding: 20px;
+    color: grey;
+  }
+  

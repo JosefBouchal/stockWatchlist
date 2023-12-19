@@ -1,0 +1,19 @@
+{
+  "pageTitle": "IONIC FRAMEWORK - Aplikace",
+  "pageExplain": "Na této stránce nalezne popis funkcí jednotlivých stránek, které jsou součástí aplikace.",
+  "pageDescription": "Popis stránky",
+  "pageFeatures": "Funkce stránky",
+  "pageAPI": "API",
+  "pageInfoDescription": "Tato stránka je určená jako přehled o tom, co dělají jednotlivé stránky (záložky), jakými disponují funkcemi a případně jaké API využívají.",
+  "pageInfoFeaturesPart1": "Stránka disponuje možností přeložení celé stránky. Tato funkce funguje za pomocí frameworku i18next více na stránce: ",
+  "pageInfoFeaturesPart2": " Každý jazyk má definovaný svůj translation.json, který obsahuje seznam všech překladů, které se následně zobrazují na stránce podle zvoleného jazyka.",
+  "pageInfoAPI": "Tato stránka nevyužívá žádné API.",
+  "pageSSearchDescription": "Tato stránka umožňuje vyhledat si konkrétně společnosti, které jsou obchodovatelné na burze. U vyhledané společnosti se zobrazují základní informace (název, popis, počet zaměstnanců,...) Dále se zde zobrazuje graf s vývojem ceny akcie za určité období. Pod grafem je rychlý přehled minimální/maximální a první/poslední hodnoty z grafu za konkrétní období + návratnost za dané období.",
+  "pageSSearchFeatures": "",
+  "pageSSearchAPICall1": "API příkaz: https://cloud.iexapis.com/stable/stock/{tickerSymbol}/company?token={API_TOKEN}",
+  "pageSSearchAPICall1Description": "Tento příkaz slouží k získání základních informací o společnosti. Ze získaného JSONu se použijí tyto informace, které se následně zobrazují na stránce: název společnosti, burza, odvětví, popis a počet zaměstnanců",
+  "pageSSearchAPICall2": "API příkaz: https://cloud.iexapis.com/stable/stock/{tickerSymbol}/chart/1d?token=${API_TOKEN}",
+  "pageSSearchAPICall2Description": "Tento příkaz slouží pro získání dat o ceně akcie za poslední obchodovatelný den. Získaná data se zobrazují v grafu (cena, čas).",
+  "pageSSearchAPICall3": "API příkaz: https://cloud.iexapis.com/stable/stock/{tickerSymbol}/chart/{selectedTimeFrame}?token={API_TOKEN}",
+  "pageSSearchAPICall3Description": "Tento příkaz slouží pro získání dat o ceně akcie za určité období. Získaná data se zobrazují v grafu. Z důvodu toho, že struktura JSONu je pro období delší než 1 den jiná je potřeba použít tento příkaz."
+}

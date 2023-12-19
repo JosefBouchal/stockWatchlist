@@ -7,6 +7,36 @@
     }
 }
 
-ion-row {
+.watchlistRow {
     border-bottom: 1px solid #e0e0e0;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+}
+
+
+.errorMessage p {
+    margin: 0;
+    padding: 0px 0px 0px 5px;
+}
+
+.moveItemBtn {
+    font-size: 28px; /* No quotes needed */
+    cursor: pointer; /* No quotes needed */
+}
+
+.verticallyCenteredCol {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.colHeader {
+    font-size: 20px;
+    font-weight: bold;
 }
