@@ -18,6 +18,10 @@
     color: #555; /* Adjust the color as needed */
   }
 
+  .enterTicker {
+    font-size: 26px !important;
+    font-weight: bold !important;
+  }
   .loading-container p {
     font-size: 48px;
     padding-left: 10px;

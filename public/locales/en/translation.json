@@ -1,6 +1,47 @@
 {
-  "pageTitle": "IONIC FRAMEWORK - Application",
-  "pageExplain": "On this page you will find a description of the functions of the individual pages that are part of the application.",
-  "pageInfoDescription": "Page description",
-  "pageInfoDescriptionContent": "This page is used to display the description of the page."
+  "pageTitle": "IONIC FRAMEWORK - Applications",
+  "langugePicker": "Language:",
+  "pageExplain": "Overview of functions and APIs used within individual tabs/pages.",
+  "pageDescription": "Page Description",
+  "pageFeatures": "Page Features",
+  "pageAPI": "API",
+  
+  "pageInfoDescription": "This page is for displaying and explaining all bookmarks/pages within this project. For each page you can read a basic description of what it is for, what the page offers or what API it uses.",
+  "pageInfoFeaturesPart1": "The page allows you to translate the entire page using the toggle at the top of the page. This feature works using the i18next framework see more at:",
+  "pageInfoFeaturesPart2": " In short, this means that each language has its translation.json file defined, which contains a list of all translations that are then displayed on the page according to the selected language.",
+  "pageInfoAPI": "This page does not use any API.",
+  
+  "pageSSearchDescription": "A page to search for companies and view their basic information and share price trends.",
+  "pageSSearchFeatures": "This page allows you to search for a specific company that is traded on the stock exchange. Basic information (name, stock exchange, industry, description, number of employees) is displayed for the searched company. For the company description, it is possible to translate the text via API. Furthermore, the page offers a preview of a graph with the evolution of the share price over a certain period, which can be selected using a switch from 1 day to the entire time the company is listed. Below the chart is a summary of the minimum/maximum and first/last values from the chart for a specific period + the return for that period (difference between the first and last value).",
+  "pageSSearchAPICall1": "API call: https://cloud.iexapis.com/stable/stock/{tickerSymbol}/company?token={API_TOKEN}",
+  "pageSSearchAPICall1Description": "This command is used to get basic information about the company. The following information is used from the extracted JSON: company name, stock exchange, industry, description and number of employees (these are then displayed on the page)",
+  "pageSSearchAPICall2": "API call: https://cloud.iexapis.com/stable/stock/{tickerSymbol}/chart/1d?token=${API_TOKEN}",
+  "pageSSearchAPICall2Description": "This command is used to retrieve the share price data for the last trading day. The obtained data is displayed in a chart (price, time).",
+  "pageSSearchAPICall3": "API call: https://cloud.iexapis.com/stable/stock/{tickerSymbol}/chart/{selectedTimeFrame}?token={API_TOKEN}",
+  "pageSSearchAPICall3Description": "This command is used to retrieve the share price data for a certain period. The obtained data is displayed in a graph (price, date). Because the JSON structure is different for periods longer than 1 day, this API command should be used instead of the previous one.",
+  "pageSSearchAPICall4": "API call: https://microsoft-translator-text.p.rapidapi.com/translate?to%5B0%5D=cs&api-version=3.0&profanityAction=NoAction&textType=plain",
+  "pageSSearchAPICall4Description": "This command is used to translate text from English to English. Within the application it is used to translate the company description.",
+
+  "pageWatchlistDescription": "A page for creating and managing a watchlist for individual companies (stocks).",
+  "pageWatchlistFeatures": "The page allows you to view and manage the list of companies that the user has added to their watchlist. For each company, basic information (ticker, price, price trend, lowest and highest price over the last 1 year (52 weeks)) is displayed. For each stock, you can view its latest news (more in the 'News' section). Furthermore, within the watchlist, you can change the order of each company or remove it from the watchlist. There is also a check every 5 minutes to see if the share price has changed. If it has, a warning will be displayed that the price has changed whether the user wants to update the price",
+  "pageWatchlistAPICall1": "API call: https://cloud.iexapis.com/stable/stock/${tickerSymbol}/price?token=${API_TOKEN}",
+  "pageWatchlistAPICall1Description": "This command is used to get the current stock price. Within the watchlist, it is primarily used to track the change of the first stock in the watchlist. In case the price changes, a button will be displayed to update the stock prices in the entire watchlist.",
+  "pageWatchlistAPICall2": "API call: https://cloud.iexapis.com/stable/stock/${tickerSymbol}/quote?token=${API_TOKEN}",
+  "pageWatchlistAPICall2Description": "This command is used to retrieve information for individual stocks for subsequent display in the watchlist (price, price trend, lowest and highest price over the last 1 year (52 weeks)",
+
+  "pageNewsDescription": "Watchlist page to display a list of news for a specific company.",
+  "pageNewsFeatures": "This page displays the ten most recent news stories related to a specific company. The news stories are ordered from most recent. Each news item includes a title, image, date, source, description and a link to the full article.",
+  "pageNewsAPICall": "API call: https://cloud.iexapis.com/stable/tock/${ticker}/news/last/10?token=${API_TOKEN}",
+  "pageNewsAPICallDescription": "This command is used to list the ten most recent news stories for a specific company. The retrieved data is displayed on the page (title, image, date, source, description and link to the full article)",
+
+  
+  "pageIPOsDescription": "A page to display a list of companies that are about to IPO (Initial Public Offering).",
+  "pageIPOsFeatures": "A page to display a list of companies that will be going public in the next few days. The list is divided into individual days, which are ordered so that the most recent is always displayed at the top. For each entry (company) in the list, its name, ticker, price dispersion and number of shares are displayed",
+  "pageIPOsAPICall": "API call: https://cloud.iexapis.com/stable/stock/upcoming-ipos?token=${API_TOKEN}",
+  "pageIPOsAPICallDescription": "This command is used to get a list of all stocks that have an IPO scheduled. From the data obtained, we then use the date, ticker, price dispersion, number of shares, and company name.",
+
+  "pageEarningsDescription": "Page to view a list of companies that will be releasing their earnings for the quarter in the next few days.",
+  "pageEarningsFeatures": "A page similar to IPOs to display a list of companies that will be releasing results in the next few days. The list is divided into individual days, which are ordered to always display the most recent at the top. For each entry (company) in the list, only its ticker is displayed",
+  "pageEarningsAPICall": "API call: https://cloud.iexapis.com/stable/stock/market/upcoming-earnings?token=${API_TOKEN}",
+  "pageEarningsAPICallDescription": "This command is used to get a list of all stocks that are scheduled to post earnings. We will use all the data (date, ticker) from this command"
 }

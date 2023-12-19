@@ -290,7 +290,7 @@ const Home: React.FC = () => {
             )}
               {translation && <p><b>Translation:</b> {translation}</p>}
               {employees > 0 && <p><b>Number of Employees:</b> {employees.toLocaleString()}</p>}
-              {!companyName && <p><b>Enter a ticker symbol and click Search.</b></p>}
+              {!companyName && <p className='enterTicker'>Enter a ticker symbol and click Search.</p>}
             </IonCardContent>
           </IonCard>
 

@@ -40,3 +40,14 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+.empty-watchlist-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    height: 100%; /* Takes up the full height of the parent */
+    color: #555; /* Adjust the color as needed */
+    text-align: center;
+    padding: 20px; /* Optional, for some internal spacing */
+}

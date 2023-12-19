@@ -207,6 +207,12 @@ const Watchlist: React.FC = () => {
                         <IonCol className="verticallyCenteredCol colHeader">52-Week High</IonCol>
                         <IonCol size="2" className="verticallyCenteredCol colHeader"></IonCol> {/* Empty column for buttons */}
                     </IonRow>
+                    {watchlist.length === 0 ? (
+                    <div className="empty-watchlist-message">
+                        Empty watchlist. Add some stock to watchlist.
+                    </div>
+                    ) : (
+                        <div>
                     {watchlist.map((item: string, index: number) => ( // index is the second parameter in the map function
                         <IonRow className='watchlistRow' key={item}>
 
@@ -240,6 +246,8 @@ const Watchlist: React.FC = () => {
                             </IonCol>
                         </IonRow>
                     ))}
+                    </div>
+                    )}
                 </IonGrid>
             </IonContent>
         </IonPage>

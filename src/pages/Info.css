@@ -1,20 +1,67 @@
 .pageExplain {
-    padding: 10px 0px 10px 0px;
-    font-size: large;
-}
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
 .accordionHeaderText {
-    font-size: 24px;
+    font-size: 1.1em;
     font-weight: bold;
-    padding: 0px;
-    margin: 0px;
-}
+    margin-top: 10px;
+  }
+
+  ion-accordion {
+    background-color: #fcfdff;
+  }
+  .accordionContent {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
 
 .bold {
     font-weight: bold;
 }
 
-.pageLabel{
-    font-size: 26px !important;
+.pageLabel {
+    font-size: 1.5em !important;
     font-weight: bold;
-}
+  }
+
+.btn-group button {
+    background-color: #c3d8fe; /* Green background */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+
+  .firstBtn{
+    border-radius: 10px 0 0 10px;
+  }
+  .secondBtn{
+    border-radius: 0 10px 10px 0;
+  }
+  .firstLabel{
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #c3d8fe;
+  }
+
+  .btn-group button.selected {
+    background-color: #387ffd; /* Different color for selected language */
+    color: white;
+  }
